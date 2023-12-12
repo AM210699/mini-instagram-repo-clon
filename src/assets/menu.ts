@@ -5,12 +5,12 @@ const menu: Array<MenuOption> = [
     {
         icono: "bi-house",
         titulo: "Home",
-        ruta: ['/search']
+        ruta: ['/home']
     },
     {
         icono: "bi-search",
         titulo: "Search",
-        ruta: ['/explore']
+        ruta: ['/search']
     },
     {
         icono: "bi-film",

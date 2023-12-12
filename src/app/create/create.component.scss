@@ -1,0 +1,25 @@
+$font-size: 48px;
+$hover-color: red;
+
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    font-size: $font-size;
+    padding: 30px;
+}
+
+.actionable {
+    @include flex-center;
+
+    &:hover {
+        color: $hover-color;
+        cursor: pointer;
+    }
+}

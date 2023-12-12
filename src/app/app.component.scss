@@ -1,7 +1,12 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
 main {
     background-color: black;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     color: white;
 
     .container {
@@ -37,7 +42,24 @@ main {
         }
 
         .section-content {
-            padding-left: 16px;
+            padding: 16px 100px 0 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+
+            footer {
+                display: flex;
+                justify-content: center;
+                gap: 16px;
+                margin-top: auto; /* Esto empujará el pie de página hacia abajo */
+                padding-bottom: 32px;
+                
+                a {
+                    color: gray;
+                    text-decoration: none;
+                }
+            }
         }
     }
 

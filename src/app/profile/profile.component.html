@@ -1,1 +1,63 @@
-<p>profile works!</p>
+<!-- home.component.html -->
+
+<section class="section-profile">
+    <!-- info perfil -->
+    <div class="container-image">
+        <app-image [image]="account?.infoaccount?.imageProfile!"></app-image>
+    </div>
+
+    <div>
+
+    </div>
+
+    <section class="section-data-profile">
+        <div>
+            <h2>{{ account?.username }}</h2>
+            <p>{{ account?.infoaccount?.descripcion }}</p>
+        </div>
+
+        <div class="section-statistic">
+            <div>
+                <app-badge [content]="(account?.infoaccount?.publicaciones ?? '').toString()"></app-badge>
+                <span>Posts</span>
+            </div>
+            <div>
+                <app-badge [content]="(account?.infoaccount?.seguidores ?? '').toString()"></app-badge>
+                <span>Followers</span>
+            </div>
+            <div>
+                <app-badge [content]="(account?.infoaccount?.seguidos ?? '').toString()"></app-badge>
+                <span>Following</span>
+            </div>
+        </div>
+        
+    </section>
+</section>
+
+<section class="section-highlights">
+    <div *ngFor="let highlight of account!.highlights">
+        <app-highlight [title]="highlight.name"></app-highlight>
+    </div>
+</section>
+
+<section class="section-tabs">
+    <app-tabs [tabs]="tabs"></app-tabs>
+</section>
+
+<section class="section-posts">
+    <section class="grid-posts">
+        <div class="grid-container" *ngIf="account && account.posts && account.posts.length > 0">
+            
+            <div *ngFor="let post of account!.posts; let i = index;">
+
+                <div class="section-miscellaneous">
+                    <app-thumbnail *ngFor="let highlight of account!.highlights" [image]="highlight.image"></app-thumbnail>
+                </div>
+
+                <app-detail-post [post]="post"></app-detail-post>
+
+            </div>
+        </div>
+
+    </section>
+</section>

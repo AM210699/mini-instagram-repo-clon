@@ -1,1 +1,11 @@
-<p>create works!</p>
+<section class="container">
+    <div class="actionable" [routerLink]="['video']">
+        <i class="bi bi-film"></i>
+        <p>New Video</p>
+    </div>
+    <div class="actionable" [routerLink]="['post']"> 
+        <i class="bi bi-plus-circle"></i>
+        <p>New Post</p>
+    </div>
+</section>
+<router-outlet></router-outlet>

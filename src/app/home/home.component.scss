@@ -1,0 +1,79 @@
+// home.component.scss
+
+.post-container {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    max-width: 600px;
+  
+    .user-info {
+      display: flex;
+      align-items: center;
+      padding: 12px;
+  
+      .image-profile {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 12px;
+      }
+  
+      .username {
+        font-weight: bold;
+      }
+    }
+  
+    .post-image {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+  
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px;
+  
+      i {
+        font-size: 20px;
+        cursor: pointer;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+  
+  .stories-container {
+    display: flex;
+    gap: 10px;
+  
+    .story {
+      width: 60px;
+      height: 60px;
+      border: 2px solid #ffcc00;
+      border-radius: 50%;
+      overflow: hidden;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      p {
+        margin-top: 4px;
+        text-align: center;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  

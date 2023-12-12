@@ -1,0 +1,16 @@
+<!-- Importa los componentes necesarios -->
+<app-badge></app-badge>
+
+<!-- Sección de creación de contenido (nuevo post o subir video) -->
+<app-create></app-create>
+
+<section class="section-stories">
+    <div class="story" *ngFor="let story of userStories">
+      <!-- Contenido de la historia (puedes personalizar según tus necesidades) -->
+      <img [src]="story.image" alt="Story Image">
+      <p>{{ story.username }}</p>
+    </div>
+  </section>
+
+
+

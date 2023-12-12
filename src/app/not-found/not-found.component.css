@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://papers.co/wallpaper/papers.co-vt06-abstract-art-color-basic-background-pattern-25-wallpaper.jpg');
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .error-container {
+    text-align: center;
+  }
+  
+  .error-content {
+    background-color: #6cd26e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .error-code {
+    font-size: 5em;
+    color: #e74c3c;
+    margin: 0;
+  }
+  
+  .error-message {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .error-description {
+    color: #555;
+  }
+  
+  .back-to-home {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #3498db;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    display: inline-block;
+  }
+  
+  .back-to-home:hover {
+    background-color: #3498db;
+    color: #fff;
+  }
+  

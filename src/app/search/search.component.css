@@ -1,0 +1,62 @@
+/* search.component.css */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+h2, h4 {
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #f9f9f9;
+}
+
+.list-group-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.list-group-item .user-details {
+  flex: 1;
+}
+
+.list-group-item .username {
+  font-weight: bold;
+}
+
+.list-group-item .follow-button {
+  background-color: #3897f0;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.list-group-item .follow-button:hover {
+  background-color: #2662a6;
+}
